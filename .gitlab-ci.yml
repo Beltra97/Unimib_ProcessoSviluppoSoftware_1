@@ -12,5 +12,5 @@ before_script:
 build:
   stage: build
   script:
-    - dotnet build
+    - dotnet build IntranetAziendale/IntranetAziendale.sln
 
