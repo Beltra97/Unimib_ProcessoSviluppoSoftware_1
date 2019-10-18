@@ -15,8 +15,8 @@ build:
   script:
     - dotnet build IntranetAziendale/IntranetAziendale.sln
 
-build:
-  stage: build
+verify:
+  stage: verify
   script:
     - dotnet build IntranetAziendale/IntranetAziendale.sln
 
