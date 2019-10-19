@@ -7,6 +7,7 @@ variables:
 stages:
   - build
   - verify
+  - unit-test
 
 before_script:
     - "dotnet --info"
@@ -23,4 +24,10 @@ verify:
   stage: verify
   script:
     - dotnet build IntranetAziendale/IntranetAziendale.sln
+    
+unit-test:
+  stage: unit-test
+  script:
+   - dotnet test UnitTests/UnitTests.csproj
+    
 
