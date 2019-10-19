@@ -1,5 +1,9 @@
 image : microsoft/dotnet:latest
 
+variables:
+  tests: "Tests"
+  integration_tests: "IntegrationTests"
+
 stages:
   - build
   - verify
