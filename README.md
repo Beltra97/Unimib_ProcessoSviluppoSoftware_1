@@ -16,11 +16,11 @@ Il codice sorgente è disponibile su gitlab https://gitlab.com/Beltra97/2019_ass
 
 È stata implementata una pipeline composta dai seguenti stages:
 
-    - build: dotnet msbuild comando che tramite opportuni parametri consente di compilare un progetto e tutte le relative dipendenze  
-    - verify: dotnet msbuild comando che tramite opportuni parametri compila il progetto mostrando il risultato di una checkstyle e code analysis  
-    - unit tests: dotnet test comando per eseguire unit test  
-    - integrations tests: dotnet test comando per eseguire integration test  
-    - package: comando che comprime il codice in un pacchetto NuGet  
+    1. build: dotnet msbuild comando che tramite opportuni parametri consente di compilare un progetto e tutte le relative dipendenze  
+    2. verify: dotnet msbuild comando che tramite opportuni parametri compila il progetto mostrando il risultato di una checkstyle e code analysis  
+    3. unit tests: dotnet test comando per eseguire unit test  
+    4. integrations tests: dotnet test comando per eseguire integration test  
+    5. package: comando che comprime il codice in un pacchetto NuGet  
 
 ## Sviluppi futuri  
 
