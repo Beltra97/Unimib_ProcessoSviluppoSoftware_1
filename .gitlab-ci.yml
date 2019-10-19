@@ -8,6 +8,7 @@ stages:
   - build
   - verify
   - unit-test
+  -integration-test
 
 before_script:
     - "dotnet --info"
@@ -29,5 +30,9 @@ unit-test:
   stage: unit-test
   script:
    - dotnet test IntranetAziendale/UnitTests/UnitTests.csproj
+   
+integration-test:
+  stage: integration-test
+  script:
+   - dotnet test IntranetAziendale/IntegrationTests/IntegrationTests.csproj   
     
-
