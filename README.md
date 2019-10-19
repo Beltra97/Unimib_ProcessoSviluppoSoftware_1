@@ -24,4 +24,4 @@ Il codice sorgente è disponibile su gitlab https://gitlab.com/Beltra97/2019_ass
 
 ## Sviluppi futuri  
 
-Verranno implementate gli ultimi due stages della pipeline: release e deploy
+Verranno implementati gli ultimi due stages della pipeline: release e deploy
