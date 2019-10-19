@@ -8,7 +8,7 @@ stages:
   - build
   - verify
   - unit-test
-  -integration-test
+  - integration-test
 
 before_script:
     - "dotnet --info"
