@@ -28,6 +28,6 @@ verify:
 unit-test:
   stage: unit-test
   script:
-   - dotnet test UnitTests/UnitTests.csproj
+   - dotnet test IntranetAziendale/UnitTests/UnitTests.csproj
     
 
