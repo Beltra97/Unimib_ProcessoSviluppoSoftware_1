@@ -1,0 +1,14 @@
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\bin\Debug\netcoreapp2.2\UnitTests.deps.json
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\bin\Debug\netcoreapp2.2\UnitTests.runtimeconfig.json
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\bin\Debug\netcoreapp2.2\UnitTests.runtimeconfig.dev.json
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\bin\Debug\netcoreapp2.2\UnitTests.dll
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\bin\Debug\netcoreapp2.2\UnitTests.pdb
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\obj\Debug\netcoreapp2.2\UnitTests.csprojAssemblyReference.cache
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\obj\Debug\netcoreapp2.2\UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\obj\Debug\netcoreapp2.2\UnitTests.AssemblyInfoInputs.cache
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\obj\Debug\netcoreapp2.2\UnitTests.AssemblyInfo.cs
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\obj\Debug\netcoreapp2.2\UnitTests.dll
+C:\Users\Davide Finati\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\UnitTests\obj\Debug\netcoreapp2.2\UnitTests.pdb
