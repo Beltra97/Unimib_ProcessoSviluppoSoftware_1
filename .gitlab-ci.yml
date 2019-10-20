@@ -19,12 +19,12 @@ before_script:
 build:
   stage: build
   script:
-    - dotnet build IntranetAziendale/IntranetAziendale.sln
+    - dotnet build /p:RunCodeAnalysis=false IntranetAziendale/IntranetAziendale.sln
 
 verify:
   stage: verify
   script:
-    - dotnet build IntranetAziendale/IntranetAziendale.sln
+    - dotnet build --no-incremental /p:RunCodeAnalysis=true IntranetAziendale/IntranetAziendale.sln
     
 unit-test:
   stage: unit-test
