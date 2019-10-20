@@ -9,6 +9,7 @@ stages:
   - verify
   - unit-test
   - integration-test
+  - package
 
 before_script:
     - "dotnet --info"
@@ -35,4 +36,9 @@ integration-test:
   stage: integration-test
   script:
    - dotnet test IntranetAziendale/IntegrationTests/IntegrationTests.csproj   
+
     
+package:
+  stage: package 
+  script:
+    - dotnet pack IntranetAziendale/IntranetAziendale.sln
