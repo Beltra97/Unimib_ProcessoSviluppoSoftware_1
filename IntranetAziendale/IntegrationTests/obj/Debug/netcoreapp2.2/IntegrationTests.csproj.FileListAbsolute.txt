@@ -1,0 +1,17 @@
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\nunit.engine.netstandard.dll
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\IntegrationTests.deps.json
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\IntegrationTests.runtimeconfig.json
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\IntegrationTests.runtimeconfig.dev.json
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\IntegrationTests.dll
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\IntegrationTests.pdb
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\IntranetDAL.dll
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\bin\Debug\netcoreapp2.2\IntranetDAL.pdb
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.csprojAssemblyReference.cache
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.csproj.CoreCompileInputs.cache
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.AssemblyInfoInputs.cache
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.AssemblyInfo.cs
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.csproj.CopyComplete
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.dll
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntegrationTests\obj\Debug\netcoreapp2.2\IntegrationTests.pdb

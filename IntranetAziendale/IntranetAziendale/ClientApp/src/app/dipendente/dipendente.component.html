@@ -1,0 +1,72 @@
+<h3>Dipendenti</h3>
+<div style="height: 20px"></div>
+<form [formGroup]="dipendenteForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="cognome" style="width: 100px">
+          Cognome
+        </label>
+        <span style="display:inline-block; width: 50px;"></span>
+        <input id="cognome" type="text" formControlName="cognome">
+      </div>
+    
+      <div>
+        <label for="nome" style="width: 100px">
+          Nome
+        </label>
+        <span style="display:inline-block; width: 50px;"></span>
+        <input id="nome" type="text" formControlName="nome">
+      </div>
+
+      <div>
+        <label for="username" style="width: 100px">
+          Username
+        </label>
+        <span style="display:inline-block; width: 50px;"></span>
+        <input id="username" type="text" formControlName="username">
+      </div>
+
+      <div>
+        <label for="psw" style="width: 100px">
+          Password
+        </label>
+        <span style="display:inline-block; width: 50px;"></span>
+        <input id="psw" type="text" formControlName="psw">
+      </div>
+
+      <div>
+        <label for="ruolo" style="width: 100px">
+          Ruolo
+        </label>
+        <span style="display:inline-block; width: 50px;"></span>
+        <select formControlName="selectedRuolo">
+            <option *ngFor="let r of listRuoli" [value]="r.id">
+              {{r.nome}}
+            </option>
+        </select>
+      </div>
+
+      <br/>
+      <button type="submit" class="btn-primary">Aggiungi Dipendente</button>
+</form>
+<div style="height: 40px"></div>
+<table class="table table-striped" style="border:10px">
+  <thead>
+    <tr>
+      <th scope="col">Cognome</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Username</th>
+      <th scope="col">Ruolo</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of listDipendenti">
+      <td>{{ a.cognome }}</td>
+      <td>{{ a.nome }}</td>
+      <td>{{ a.username }}</td>
+      <td>{{ a.ruolo }}</td>
+      <td><button class="btn-danger" (click)="deleteDipendente(a.id)">Rimuovi</button></td>
+    </tr>
+  </tbody>
+  
+</table>
