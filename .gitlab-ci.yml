@@ -24,6 +24,7 @@ before_script:
     - "npm install -g @angular/cli"
     - apt-get update && apt-get --assume-yes install mariadb-client
     - mysql --user=root --password="" --host=mariadb < "ScriptDB.sql"
+    - ping mariadb -c 4
 
     
 build:
@@ -46,8 +47,7 @@ integration-test:
   script:
    - dotnet test IntranetAziendale/IntegrationTests/IntegrationTests.csproj   
 
-    
 package:
   stage: package 
   script:
-    - dotnet pack IntranetAziendale/IntranetAziendale.sln
+    - dotnet pack IntranetAziendale/IntranetAziendale.sln -o Package
