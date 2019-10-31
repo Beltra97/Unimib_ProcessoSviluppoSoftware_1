@@ -16,7 +16,13 @@ Il codice sorgente è disponibile su gitlab https://gitlab.com/Beltra97/2019_ass
 
 Sono stati creati e utilizzati i branch master e develop
 
-## Pipeline
+## Considerazioni
+
+Versioni release:
+i nomi delle versioni sono state gestite nel nostro caso con questo formato: 1.0.x, dove x sta ad indicare l'ID univoco della build. 
+Questo perchè abbiamo riscontrato delle difficoltà in una gestione incrementale e più ottimizzata delle stesse (1.0.1 -> 1.0.2 -> ecc)
+
+## DEVOPS
 
 È stata implementata una pipeline composta dai seguenti stages:
 
@@ -25,7 +31,8 @@ Sono stati creati e utilizzati i branch master e develop
 3. unit-test: dotnet test comando per eseguire unit test  
 4. integration-test: dotnet test comando per eseguire integration test  
 5. package: comando che comprime il codice in un pacchetto NuGet  
+6. release: comando che genera una release creando un tag associato ad un commit
 
 ## Sviluppi futuri  
 
-Verranno implementati gli ultimi due stages della pipeline: release e deploy
+Verrà implementato l'ultimo stage della pipeline: deploy
