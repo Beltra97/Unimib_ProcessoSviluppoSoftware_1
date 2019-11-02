@@ -1,0 +1,64 @@
+image : microsoft/dotnet:latest
+
+services:
+    - mariadb
+
+variables:
+  tests: "Tests"
+  integration_tests: "IntegrationTests"
+  MYSQL_DATABASE: mydb
+  MYSQL_ALLOW_EMPTY_PASSWORD: "1"
+  CI_VERSION: "1.0.${CI_BUILD_ID}"
+
+
+stages:
+  - build
+  - verify
+  - unit-test
+  - integration-test
+  - package
+  - release
+
+before_script:
+    - "dotnet --info"
+    - "curl -sL https://deb.nodesource.com/setup_10.x | bash -"
+    - "apt-get install -y nodejs"
+    - "npm install -g @angular/cli"
+    - apt-get update && apt-get --assume-yes install mariadb-client
+    - mysql --user=root --password="" --host=mariadb < "ScriptDB.sql"
+    - ping mariadb -c 4
+
+    
+build:
+  stage: build
+  script:
+    - dotnet build /p:RunCodeAnalysis=false IntranetAziendale/IntranetAziendale.sln
+
+verify:
+  stage: verify
+  script:
+    - dotnet build --no-incremental /p:RunCodeAnalysis=true IntranetAziendale/IntranetAziendale.sln
+    
+unit-test:
+  stage: unit-test
+  script:
+   - dotnet test IntranetAziendale/UnitTests/UnitTests.csproj
+   
+integration-test:
+  stage: integration-test
+  script:
+   - dotnet test IntranetAziendale/IntegrationTests/IntegrationTests.csproj   
+
+package:
+  stage: package 
+  script:
+    - dotnet pack IntranetAziendale/IntranetAziendale.sln -o Package
+    
+release:
+  stage: release
+  only:
+    - master
+  script:
+    - curl --header 'Content-Type:application/json' --header "PRIVATE-TOKEN:B8vyi17Jrab3R_bAtzwd" --data '{"name":"Assignment 1 - Release '$CI_VERSION'", "tag_name":"'$CI_VERSION'", "ref":"'"$CI_COMMIT_SHA"'", "description":"Release '$CI_VERSION'"}' --request POST https://gitlab.com/api/v4/projects/14784984/releases
+
+    

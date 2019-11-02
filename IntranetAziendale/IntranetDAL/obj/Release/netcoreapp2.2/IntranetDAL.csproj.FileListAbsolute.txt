@@ -1,0 +1,11 @@
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\bin\Release\netcoreapp2.2\IntranetDAL.deps.json
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\bin\Release\netcoreapp2.2\IntranetDAL.runtimeconfig.json
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\bin\Release\netcoreapp2.2\IntranetDAL.runtimeconfig.dev.json
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\bin\Release\netcoreapp2.2\IntranetDAL.dll
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\bin\Release\netcoreapp2.2\IntranetDAL.pdb
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Release\netcoreapp2.2\IntranetDAL.csprojAssemblyReference.cache
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Release\netcoreapp2.2\IntranetDAL.csproj.CoreCompileInputs.cache
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Release\netcoreapp2.2\IntranetDAL.AssemblyInfoInputs.cache
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Release\netcoreapp2.2\IntranetDAL.AssemblyInfo.cs
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Release\netcoreapp2.2\IntranetDAL.dll
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Release\netcoreapp2.2\IntranetDAL.pdb

@@ -1,0 +1,40 @@
+<h3>Convenzioni</h3>
+<div style="height: 20px"></div>
+<form [formGroup]="convenzioneForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="titolo" style="width: 100px">
+          Titolo
+        </label>
+        <span style="display:inline-block; width: 50px;"></span>
+        <input id="titolo" type="text" formControlName="titolo">
+      </div>
+    
+      <div>
+        <label for="descrizione" style="width: 100px">
+          Descrizione
+        </label>
+        <span style="display:inline-block; width: 50px;"></span>
+        <input id="descrizione" type="text" formControlName="descrizione">
+      </div>
+
+      <br/>
+      <button type="submit" class="btn-primary">Aggiungi Convenzione</button>
+</form>
+
+<div style="height: 40px"></div>
+<table class="table table-striped" style="border:10px">
+  <thead>
+    <tr>
+      <th scope="col">Titolo</th>
+      <th scope="col">Descrizione</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of listConvenzioni">
+      <td>{{ a.titolo }}</td>
+      <td>{{ a.descrizione }}</td>
+      <td><button class="btn-danger" (click)="deleteConvenzione(a.id)">Rimuovi</button></td>
+    </tr>
+  </tbody>
+</table>
