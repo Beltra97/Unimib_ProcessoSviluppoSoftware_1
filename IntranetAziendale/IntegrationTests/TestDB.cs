@@ -23,7 +23,7 @@ namespace Tests
 
 
         [Test]
-        public void TestAddDipendente()
+        public void Test1AddDipendente()
         {
             DipendenteDMController controller = new DipendenteDMController();
 
@@ -42,7 +42,7 @@ namespace Tests
         }
 
         [Test]
-        public void TestGetDipendenti()
+        public void Test2GetDipendenti()
         {
             DipendenteDMController controller = new DipendenteDMController();
             List<ResponseGetDipendenti> listDip = controller.Get();
@@ -51,7 +51,7 @@ namespace Tests
         }
 
         [Test]
-        public void TestGetDipendenteByID()
+        public void Test3GetDipendenteByID()
         {
             DipendenteDMController controller = new DipendenteDMController();
             Dipendente dip = controller.GetByID(1);
@@ -61,7 +61,27 @@ namespace Tests
         }
 
         [Test]
-        public void TestDeleteDipendente()
+        public void Test4UpdateDipendente()
+        {
+            DipendenteDMController controller = new DipendenteDMController();
+
+            RequestAddDipendente d = new RequestAddDipendente()
+            {
+                Cognome = "Neri",
+                Nome = "Luca",
+                Username = "luca.neri",
+            };
+            controller.Update(idNewDip, d);
+
+            Dipendente dip = controller.GetByID(idNewDip);
+
+            Assert.AreEqual(dip.Cognome, "Neri");
+            Assert.AreEqual(dip.Nome, "Luca");
+            Assert.AreEqual(dip.Username, "luca.neri");
+        }
+
+        [Test]
+        public void Test5DeleteDipendente()
         {
             DipendenteDMController controller = new DipendenteDMController();
 
@@ -75,7 +95,7 @@ namespace Tests
         /// </summary>
 
         [Test]
-        public void TestAddConvenzione()
+        public void Test1AddConvenzione()
         {
             ConvenzioneDMController controller = new ConvenzioneDMController();
 
@@ -91,7 +111,7 @@ namespace Tests
         }
 
         [Test]
-        public void TestGetConvenzioni()
+        public void Test2GetConvenzioni()
         {
             ConvenzioneDMController controller = new ConvenzioneDMController();
             List<Convenzione> listCon = controller.Get();
@@ -100,7 +120,7 @@ namespace Tests
         }
 
         [Test]
-        public void TestGetConvenzioneByID()
+        public void Test3GetConvenzioneByID()
         {
             ConvenzioneDMController c = new ConvenzioneDMController();
             Convenzione dip = c.GetByID(1);
@@ -109,7 +129,25 @@ namespace Tests
         }
 
         [Test]
-        public void TestDeleteConvenzione()
+        public void Test4UpdateConvenzione()
+        {
+            ConvenzioneDMController controller = new ConvenzioneDMController();
+
+            RequestAddConvenzione d = new RequestAddConvenzione()
+            {
+                Titolo = "Sconto carburante",
+                Descrizione = "Lorem ipsum2"
+            };
+            controller.Update(idNewConv, d);
+
+            Convenzione conv = controller.GetByID(idNewConv);
+
+            Assert.AreEqual(conv.Titolo, "Sconto carburante");
+            Assert.AreEqual(conv.Descrizione, "Lorem ipsum2");
+        }
+
+        [Test]
+        public void Test5DeleteConvenzione()
         {
             ConvenzioneDMController controller = new ConvenzioneDMController();
 
