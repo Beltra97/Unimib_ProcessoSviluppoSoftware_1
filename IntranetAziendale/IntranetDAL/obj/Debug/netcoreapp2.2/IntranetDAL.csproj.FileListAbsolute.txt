@@ -8,3 +8,4 @@ C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\Int
 C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Debug\netcoreapp2.2\IntranetDAL.AssemblyInfo.cs
 C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Debug\netcoreapp2.2\IntranetDAL.dll
 C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Debug\netcoreapp2.2\IntranetDAL.pdb
+C:\Users\SI2001\Desktop\2019_assignment1_intranetaziendale\IntranetAziendale\IntranetDAL\obj\Debug\netcoreapp2.2\IntranetDAL.csprojAssemblyReference.cache
