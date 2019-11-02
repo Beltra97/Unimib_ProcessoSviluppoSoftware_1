@@ -67,17 +67,17 @@ namespace Tests
 
             RequestAddDipendente d = new RequestAddDipendente()
             {
-                Cognome = "Neri",
-                Nome = "Luca",
-                Username = "luca.neri",
+                Cognome = "Verdi",
+                Nome = "Carlo",
+                Username = "carlo.verdi",
             };
             controller.Update(idNewDip, d);
 
             Dipendente dip = controller.GetByID(idNewDip);
 
-            Assert.AreEqual(dip.Cognome, "Neri");
-            Assert.AreEqual(dip.Nome, "Luca");
-            Assert.AreEqual(dip.Username, "luca.neri");
+            Assert.AreEqual(dip.Cognome, "Verdi");
+            Assert.AreEqual(dip.Nome, "Carlo");
+            Assert.AreEqual(dip.Username, "carlo.verdi");
         }
 
         [Test]
