@@ -32,6 +32,9 @@ verify:
 unit-test:
     stage: unit-test
     script:
+        - curl -sL https://deb.nodesource.com/setup_10.x | bash -
+        - apt-get install -y nodejs
+        - npm install -g @angular/cli
         - dotnet test IntranetAziendale/UnitTests/UnitTests.csproj
    
 integration-test:
@@ -44,6 +47,9 @@ integration-test:
     - mariadb
 
     script:
+        - curl -sL https://deb.nodesource.com/setup_10.x | bash -
+        - apt-get install -y nodejs
+        - npm install -g @angular/cli
         - apt-get update && apt-get --assume-yes install mariadb-client
         - mysql --user=root --password="" --host=mariadb < "ScriptDB.sql"
         - dotnet test IntranetAziendale/IntegrationTests/IntegrationTests.csproj   
