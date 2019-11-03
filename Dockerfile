@@ -1,6 +1,10 @@
 FROM microsoft/dotnet:2.2-sdk as build-env
 WORKDIR /app
 
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install -y nodejs
+RUN npm install -g @angular/cli
+
 COPY . .
 
 WORKDIR /app/IntranetAziendale/IntranetAziendale
