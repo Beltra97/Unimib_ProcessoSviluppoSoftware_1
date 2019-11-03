@@ -61,4 +61,18 @@ release:
   script:
     - curl --header 'Content-Type:application/json' --header "PRIVATE-TOKEN:B8vyi17Jrab3R_bAtzwd" --data '{"name":"Assignment 1 - Release '$CI_VERSION'", "tag_name":"'$CI_VERSION'", "ref":"'"$CI_COMMIT_SHA"'", "description":"Release '$CI_VERSION'"}' --request POST https://gitlab.com/api/v4/projects/14884438/releases
 
+deploy:
+    stage: deploy
+    
+    image: docker:latest
+    services:
+        - docker:dind
+    script: 
+        - docker login --username=f.beltramelli@campus.unimib.it --password=$HEROKU_API registry.heroku.com
+        - docker build -t deployintranetaziendale -f Dockerfile .
+        - docker tag deployintranetaziendale registry.heroku.com/deployintranetaziendale/web
+        - docker push registry.heroku.com/deployintranetaziendale/web
+
+    
+
     
